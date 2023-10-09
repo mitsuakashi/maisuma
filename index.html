@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora de imc</title>
+</head>
+<style>
+    
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+    body{width: 200vh;
+        height: 100vh;
+        background-image:linear-gradient(to left,blue, black);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        width: 80vh ;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow:0px 0px 60px rgb(0, 1, 2);
+        border-radius: 10%;
+        background-image: linear-gradient(to left,rgb(236, 108, 129)
+        ,blue);
+        
+    }
+    h1{
+        color: rgba(217, 204, 204, 0.918);
+        font-family:'Bebas Neue', sans-serif; ;
+    }
+    .dataconteiner{
+        margin-top:20px ;
+        border-radius: 2%;
+        
+    }
+    input{
+        border-style:none;
+        border-radius: 10%;
+        width: 160px;
+        height: 70px;
+        font-size: 25px;
+        
+    }
+    .resultado{
+        color: aliceblue;
+        font-size: 50px;
+
+        
+    }
+    button{
+        font-family:'Bebas Neue', sans-serif; ;
+        width: 100px;
+        height: 45px;
+        margin-top: 20px;
+        border-style: none;
+        border-radius: 10px;
+        cursor:pointer;
+    }
+    input::placeholder{
+        display: flex;
+        align-items: center;
+    }
+    button:hover{
+        background-color:blue ;
+        color: white;
+        transition: 1s;
+    }
+</style>
+<body>
+    <header>
+        <div>
+        <h1>Calculadora de IMC</h1>
+        </div>
+        <div class="dataconteiner">
+            <input type="text" id="nome" placeholder="nome">
+
+        </div>
+        <div class="dataconteiner">
+            <input type="number" id="peso" placeholder="peso" >
+
+        </div>
+        <div class="dataconteiner">
+            <input type="number" id="altura" placeholder="altura" >
+
+        </div>
+
+        
+        <div class="resultado"></div>
+    </header>
+    <button id="button">calcular</button>
+        
+</body>
+<script src="calculaldora.js"></script>
+</html>
